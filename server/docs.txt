@@ -1,0 +1,6 @@
+npx sequelize-cli model:generate --name Products --attributes name:string,description:string,sku:string,weight:integer,width:integer,length:integer,height:integer,image:string,harga:integer,CategoryId:integer
+npx sequelize-cli model:generate --name Category --attributes categoryName:string
+npx sequelize-cli model:generate --name Users --attributes username:string,email:string,password:string
+
+npx sequelize-cli seed:generate --name seeding_category
+npx sequelize-cli seed:generate --name seeding_product
